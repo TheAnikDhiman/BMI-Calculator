@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        app:srcCompat="@drawable/bmi" />
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Calculate Your BMI"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/health"
+        android:textColor="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Your Health"
+        android:text=""
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:textColor="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your Weight(in Kg)"
+        android:inputType="number"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/height_ft"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Height(feet)"
+            android:inputType="number"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/height_in"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Height(in inchs)"
+            android:inputType="number"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:backgroundTint="@color/black"
+        android:id="@+id/calculate"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+</LinearLayout>
